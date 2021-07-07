@@ -5,10 +5,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 class TicTacToe implements ActionListener {
 
@@ -144,14 +141,6 @@ class TicTacToe implements ActionListener {
 		}
 		if(button[2].getText() == "X" && button[4].getText() == "X" && button[6].getText() == "X") {
 			oWin(2, 4, 6);
-		}
-		
-		
-		if(button[0].getText() != "" && button[1].getText() != "" && button[2].getText() != "" && 
-		   button[3].getText() != "" && button[4].getText() != "" && button[5].getText() != "" && 
-		   button[6].getText() != "" && button[7].getText() != "" && button[8].getText() != "") {
-			player_update.setForeground(Color.WHITE);
-			player_update.setText("It's Draw...Play Again");
 		}
 	}
 	
